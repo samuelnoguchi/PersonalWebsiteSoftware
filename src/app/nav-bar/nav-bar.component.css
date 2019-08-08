@@ -1,0 +1,16 @@
+.navbar-nav{
+    padding: 20px 10%;
+}
+
+.nav-item{
+    font-family: "Lato";
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(187, 186, 186) ;
+}
+
+.nav-item:hover{
+    cursor: pointer;
+    color: white;
+}
+
