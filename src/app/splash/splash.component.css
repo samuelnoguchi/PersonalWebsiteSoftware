@@ -1,17 +1,30 @@
 .splash{
-    background-color: black;
     height: 100vh;
     font-family: "Lato";
 }
 
-h1{
+@media only screen and (max-width: 600px) {
+    .text-lg{
+        font-size: 40px !important;
+    }
+    .text-md{
+        font-size: 24px !important;
+    }
+} 
+
+
+.text-lg{
     color: white;
-    font-size: 72px;;
+    font-size: 72px;
     font-weight: 300;
 }
 
-h2{
+.text-md{
     color: white;
     font-size: 40px;;
     font-weight: 100;
+}
+
+.col{
+    padding: 4% 4%;
 }

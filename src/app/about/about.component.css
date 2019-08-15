@@ -1,0 +1,61 @@
+.about{
+    
+    background-color: #f0f0f0;
+}
+
+.p-8{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.med-text{
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 767px) {
+    .med-text{
+        font-size: 18px;
+    }
+
+    .bmo-pic{
+        height: 50px !important;
+    }
+
+    .ct-pic{
+        height: 50px !important;
+    }
+
+}  
+
+@media only screen and (min-width: 768px) and (max-width: 1400px) {
+    .med-text{
+        font-size: 22px;
+    }
+
+    .bmo-pic{
+        height: 60px !important;
+    }
+
+    .ct-pic{
+        height: 60px !important;
+    }
+} 
+
+@media only screen and (min-width: 1401px) {
+    .about{
+        padding-top: 2%;
+        padding-bottom: 4%;
+    }
+} 
+
+
+.bmo-pic{
+    height: 80px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.ct-pic{
+    height: 80px;
+    margin-left: 10px;
+}

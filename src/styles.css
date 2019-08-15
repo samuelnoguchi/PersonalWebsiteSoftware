@@ -1,5 +1,86 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~animate.css/animate.min.css';
+
 body{
     font-family: 'Lato', sans-serif;
-    overflow: hidden;
 }
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+.bg-color{
+    background-color: #274458;
+}
+
+.text-color-main{
+    color: #76a2bd; 
+}
+
+.text-color-grey{
+    color: #555555;
+}
+
+.link:hover{
+    color: #76a2bd;
+}
+
+.header{
+    font-size: 54px;
+    color: #555555;
+    font-weight: 100;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1400px) {
+    .header{
+        font-size: 48px;
+    }
+
+    .header::after{
+        margin-top: 10px !important;
+        margin-bottom: 2%;
+    }
+
+}  
+
+@media only screen and (max-width: 767px) {
+    .header{
+        font-size: 40px;
+    }
+
+    .header::after{
+        margin-top: 10px !important;
+        margin-bottom: 2%;
+    }
+
+    .section{
+        padding: 8% 4% !important;
+    }
+
+}  
+
+.header::after{
+    display:block;
+    height: 2px;
+    background-color: #555555;
+    content: " ";
+    width:100px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 4%;
+}
+
+.section {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 4% 4%;
+}
+
+
+
+/* Optional: show position indicator in red */

@@ -1,12 +1,23 @@
 .navbar-nav{
-    padding: 20px 10%;
+    padding: 0.5% 10%;
 }
+
+@media only screen and (max-width: 767px) {
+    .navbar-nav{
+        padding: 0px 0px;        
+    }
+}  
+@media only screen and (min-width: 768px) and (max-width: 1400px) {
+    .navbar-nav{
+        padding: 0px 0px;        
+    }
+} 
+
 
 .nav-item{
     font-family: "Lato";
     font-weight: 500;
     font-size: 18px;
-    color: rgb(187, 186, 186) ;
 }
 
 .nav-item:hover{

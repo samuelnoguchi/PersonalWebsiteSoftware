@@ -79,7 +79,7 @@ this.myParams = {
       "enable": true,
       "distance": 200,
       "color": "#ffffff",
-      "opacity": 0.4,
+      "opacity": 0.35,
       "width": 1.5
     },
     "move": {
