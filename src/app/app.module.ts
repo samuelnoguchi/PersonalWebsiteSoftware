@@ -11,6 +11,8 @@ import { SplashComponent } from './splash/splash.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { ProjectsComponent } from './projects/projects.component';
     SplashComponent,
     NavBarComponent,
     AboutComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

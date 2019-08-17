@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~animate.css/animate.min.css';
+
 
 body{
     font-family: 'Lato', sans-serif;
@@ -10,9 +10,10 @@ html {
     overflow-x: hidden;
 }
 ::-webkit-scrollbar {
-    width: 0px;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
+    width: 0px;  
+    background: transparent;  
 }
+
 
 .bg-color{
     background-color: #274458;
@@ -36,6 +37,10 @@ html {
     font-weight: 100;
 }
 
+.med-text{
+    font-size: 24px;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1400px) {
     .header{
         font-size: 48px;
@@ -44,6 +49,10 @@ html {
     .header::after{
         margin-top: 10px !important;
         margin-bottom: 2%;
+    }
+
+    .med-text{
+        font-size: 22px;
     }
 
 }  
@@ -60,6 +69,10 @@ html {
 
     .section{
         padding: 8% 4% !important;
+    }
+
+    .med-text{
+        font-size: 18px !important;
     }
 
 }  
@@ -81,6 +94,10 @@ html {
     padding: 4% 4%;
 }
 
+.p-8{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
 
 
 /* Optional: show position indicator in red */
