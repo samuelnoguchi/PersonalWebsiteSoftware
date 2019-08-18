@@ -11,3 +11,20 @@
 .card{
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
 }
+
+.btn{
+    border: 1px solid #274458;
+    border-radius: 25px;
+    font-family: 'Lato' !important;
+    color: #274458;
+}
+
+button:hover{
+    background-color: #274458;
+    color: white;
+}
+
+.btn:focus,.btn:active {
+   outline: none !important;
+   box-shadow: none;
+}

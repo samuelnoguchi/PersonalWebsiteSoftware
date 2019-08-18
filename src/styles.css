@@ -8,6 +8,8 @@ body{
 html {
     overflow: scroll;
     overflow-x: hidden;
+    background: #274458;
+    overscroll-behavior: contain;
 }
 ::-webkit-scrollbar {
     width: 0px;  
@@ -99,5 +101,20 @@ html {
     padding-bottom: 5%;
 }
 
+button:hover{
+    background-color: #274458;
+    color: white !important;
+}
+
+.btn:focus, .btn:active {
+    outline: none !important;
+    box-shadow: none !important;
+ }
+
+ input:focus { 
+    outline: none !important;
+    border-color: black;
+    box-shadow: 0 0 0px;
+}
 
 /* Optional: show position indicator in red */

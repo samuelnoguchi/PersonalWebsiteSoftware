@@ -1,6 +1,7 @@
 .splash{
     height: 100vh;
     font-family: "Lato";
+    top: 0;
 }
 
 @media only screen and (max-width: 600px) {
