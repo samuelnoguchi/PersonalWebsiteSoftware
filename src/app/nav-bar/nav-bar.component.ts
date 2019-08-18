@@ -25,6 +25,25 @@ export class NavBarComponent implements OnInit {
     this.show = !this.show;
   }
 
+  scroll(num: number) {
+    const home = document.querySelector('#splash');
+    const products = document.querySelector('#about');
+    const info = document.querySelector('#projects');
+    const contact = document.querySelector('#contact');
+
+    if(num == 0){
+      home.scrollIntoView({ behavior: "smooth", block: "start" });
+    }else if(num==1){
+      products.scrollIntoView({ behavior: "smooth", block: "start" });
+    }else if(num==2){
+      info.scrollIntoView({ behavior: "smooth", block: "start" });
+    }else if(num==3){
+      contact.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+  
+  }
+
   @HostListener('window:resize', ['$event'])
   onResize(event) {
     this.innerHeight = window.innerHeight;

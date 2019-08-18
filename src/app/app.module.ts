@@ -3,9 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
-import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { AngularFireModule } from '@angular/fire'
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { FormsModule } from '@angular/forms';
+
 import { ParticlesModule } from 'angular-particle';
 import { SplashComponent } from './splash/splash.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
@@ -29,7 +31,9 @@ import { FooterComponent } from './footer/footer.component';
     BrowserAnimationsModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule,
     ParticlesModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

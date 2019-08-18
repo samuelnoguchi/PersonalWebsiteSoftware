@@ -1,4 +1,4 @@
-<div class = "contact">
+<div id="contact" class = "contact">
   <div class ="section">
     <div class = "text-center header">
         Contact Me
@@ -17,33 +17,36 @@
         <div class="card-body">
           <!-- Header -->
           <div class="form-header blue accent-1">
-            <h3 class="mt-2"><i class="fas fa-envelope"></i> Send me a Message</h3>
+            <h3 class="mt-2"> Send me a Message</h3>
           </div>
-          <p class="dark-grey-text">I'll try to get back to you ASAP.</p>
-          <!-- Body -->
-          <div class="md-form">
-            <i class="fas fa-user prefix grey-text"></i>
-            <input type="text" id="form-name" class="form-control">
-            <label for="form-name">Your name</label>
-          </div>
-          <div class="md-form">
-            <i class="fas fa-envelope prefix grey-text"></i>
-            <input type="text" id="form-email" class="form-control">
-            <label for="form-email">Your email</label>
-          </div>
-          <div class="md-form">
-            <i class="fas fa-tag prefix grey-text"></i>
-            <input type="text" id="form-Subject" class="form-control">
-            <label for="form-Subject">Subject</label>
-          </div>
-          <div class="md-form">
-            <i class="fas fa-pencil-alt prefix grey-text"></i>
-            <textarea id="form-text" class="form-control md-textarea" rows="3"></textarea>
-            <label for="form-text">Send message</label>
-          </div>
-          <div class="text-center">
-            <button class="btn btn-light-blue">Submit</button>
-          </div>
+
+          <form #f="ngForm" (ngSubmit)="submit(f.value)">
+
+            <div class="form-group">
+                <label for="name" class="label">Name</label>
+                <input ngModel #name="ngModel" name="name" id="name" type="text" class="form-control" placeholder="" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="label">Email</label>
+                <input ngModel #email="ngModel" name="email" id="email" type="text" class="form-control" placeholder="" email required>
+            </div>
+
+            <div class="form-group">
+                <label for="subject" class="label">Subject</label>
+                <input ngModel #subject="ngModel" name="subject" id="subject" type="text" class="form-control" placeholder="" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="label">Message</label>
+              <textarea #message="ngModel" ngModel name="message" class="form-control" rows="3" id="message"></textarea>
+            </div>
+            <div class="text-center">
+                <button class="btn">Send</button>
+            </div>
+          </form>
+
+
         </div>
       </div>
       <!-- Form with header -->
@@ -60,26 +63,36 @@
       </div>
       <!-- Buttons-->
       <div class="row text-center">
-        <div class="col-md-4">
-          <a class="btn-floating blue accent-1">
-            <i class="fas fa-map-marker-alt"></i>
-          </a>
-          <p>New York, 94126</p>
-          <p class="mb-md-0">United States</p>
+        <div class="col-md-4">        
+          <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 512 512">
+            <path class="icon" d="M437.332 80H74.668C51.199 80 32 99.198 32 122.667v266.666C32 412.802 51.199 432 74.668 432h362.664C460.801 432 480 412.802 480 389.333V122.667C480 99.198 460.801 80 437.332 80zM432 170.667L256 288 80 170.667V128l176 117.333L432 128v42.667z"/>
+          </svg>
+
+          <p class="pt-3">
+            <a class="link text-color-main text-med" href="mailto:srnoguch@edu.uwaterloo.ca">srnoguch@uwaterloo.ca</a>
+          </p>
         </div>
         <div class="col-md-4">
-          <a class="btn-floating blue accent-1">
-            <i class="fas fa-phone"></i>
-          </a>
-          <p>+ 01 234 567 89</p>
-          <p class="mb-md-0">Mon - Fri, 8:00-22:00</p>
+
+          <svg xmlns="http://www.w3.org/2000/svg"  width="42" height="42" viewBox="0 0 512 512">
+            <path class="icon" d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9 1.4.3 2.6.4 3.8.4 8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1-8.4 1.9-15.9 2.7-22.6 2.7-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1 10.5 0 20-3.4 25.6-6 2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8 0 0 1.6-.5 5-.5 8.1 0 26.4 3.1 56.6 24.1 17.9-5.1 37-7.6 56.1-7.7 19 .1 38.2 2.6 56.1 7.7 30.2-21 48.5-24.1 56.6-24.1 3.4 0 5 .5 5 .5 12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5 1.2 0 2.6-.1 4-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z"/>
+          </svg>
+
+          <p class="pt-3">
+              <a class="link text-color-main text-med" href="https://github.com/samuelnoguchi" target="_blank">samuelnoguchi</a>
+          </p>
+
+
         </div>
         <div class="col-md-4">
-          <a class="btn-floating blue accent-1">
-            <i class="fas fa-envelope"></i>
-          </a>
-          <p>info@gmail.com</p>
-          <p class="mb-0">sale@gmail.com</p>
+ 
+          <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 512 512">
+            <path class="icon" d="M417.2 64H96.8C79.3 64 64 76.6 64 93.9V415c0 17.4 15.3 32.9 32.8 32.9h320.3c17.6 0 30.8-15.6 30.8-32.9V93.9C448 76.6 434.7 64 417.2 64zM183 384h-55V213h55v171zm-25.6-197h-.4c-17.6 0-29-13.1-29-29.5 0-16.7 11.7-29.5 29.7-29.5s29 12.7 29.4 29.5c0 16.4-11.4 29.5-29.7 29.5zM384 384h-55v-93.5c0-22.4-8-37.7-27.9-37.7-15.2 0-24.2 10.3-28.2 20.3-1.5 3.6-1.9 8.5-1.9 13.5V384h-55V213h55v23.8c8-11.4 20.5-27.8 49.6-27.8 36.1 0 63.4 23.8 63.4 75.1V384z"/>
+          </svg>
+
+          <p class="pt-3">
+            <a class ="link text-color-main text-med" href="https://www.linkedin.com/in/samuel-noguchi/" target="_blank">samuel-noguchi</a>
+          </p>
         </div>
       </div>
 

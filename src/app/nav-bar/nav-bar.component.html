@@ -6,20 +6,20 @@
 
   <div class="collapse navbar-collapse" [class.show]="show"  [class.dark-theme]="darkTheme" id="navbarsExampleDefault">
     <div class="navbar-nav container d-flex flex-column flex-md-row justify-content-between">
-      <div class="nav-item active" >
-        <div class="nav-link active">Home</div>
+      <div class="nav-item" >
+        <div class="nav-link" (click)="scroll(0)" >Home</div>
       </div>
       <div class="nav-item">
-        <div class="nav-link" >About</div>
+        <div class="nav-link" (click)="scroll(1)">About</div>
       </div>
       <div *ngIf="innerWidth > 767" class="nav-item">
         <div class="nav-link">Sam Noguchi</div>
       </div>
       <div class="nav-item">
-        <div class="nav-link">Projects</div>
+        <div class="nav-link" (click)="scroll(2)">Projects</div>
       </div>
       <div class="nav-item">
-          <div class="nav-link">Contact</div>
+          <div class="nav-link" (click)="scroll(3)">Contact</div>
       </div>
     </div>
   </div>
