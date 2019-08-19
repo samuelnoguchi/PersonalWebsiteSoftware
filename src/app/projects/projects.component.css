@@ -6,7 +6,20 @@
 .card-text{
     font-family: 'Lato' !important;
     font-weight: 400;
+    height: 96px;
 }
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+   .card-text{
+        height: 104px;
+   }
+}  
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+    .card-text{
+         height: 164px;
+    }
+ } 
 
 .card{
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
@@ -60,8 +73,4 @@
 
 .purple{
     background-color: #B474B6;
-}
-
-.card-text{
-    height: 96px;
 }
