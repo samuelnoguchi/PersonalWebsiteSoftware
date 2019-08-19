@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { AngularFireModule } from '@angular/fire'
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { FormsModule } from '@angular/forms';
+import { LightboxModule } from 'ngx-lightbox';
 
 import { ParticlesModule } from 'angular-particle';
 import { SplashComponent } from './splash/splash.component';
@@ -24,7 +25,7 @@ import { FooterComponent } from './footer/footer.component';
     AboutComponent,
     ProjectsComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,6 +35,7 @@ import { FooterComponent } from './footer/footer.component';
     AngularFireDatabaseModule,
     ParticlesModule,
     FormsModule,
+    LightboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
